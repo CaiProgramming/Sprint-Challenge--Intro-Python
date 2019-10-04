@@ -3,8 +3,8 @@ from oop2 import *
 
 class Oop2Tests(unittest.TestCase):
   def setUp(self):
-    self.ground_vehicle = GroundVehicle()
-    self.motorcycle = Motorcycle()
+    self.ground_vehicle = GroundVehicle(4)
+    self.motorcycle = Motorcycle(2)
 
   def test_motorcycle_inheritance(self):
     self.assertTrue(isinstance(self.motorcycle, GroundVehicle))
