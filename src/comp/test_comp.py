@@ -5,9 +5,9 @@ def compare_humans(inp, exp):
   if len(inp) != len(exp):
     return False
   for i in range(len(inp)):
-    if inp[i].name != exp[i].name:
+    if inp[i]['name'] != exp[i].name:
       return False
-    if inp[i].age != exp[i].age:
+    if inp[i]['age'] != exp[i].age:
       return False
   return True
 
